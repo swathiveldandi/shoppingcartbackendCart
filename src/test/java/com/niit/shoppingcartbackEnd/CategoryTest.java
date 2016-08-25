@@ -18,9 +18,9 @@ public class CategoryTest {
 		CategoryDAO categoryDAO =   (CategoryDAO) context.getBean("categoryDAO");
 		Category category =   (Category) context.getBean("category");
 		
-		category.setId("CN100 , CN200 , CN300, CN400");
-		category.setName("mobile ,  tv , laptop , headset");
-		category.setDescription("this is samsung mobile, this is sony hdk, my lappy.com, good to hear");
+		category.setId("CN100");
+		category.setName("mobile");
+		category.setDescription("this is samsung mobile");
 
 		categoryDAO.saveOrUpdate(category);
 		categoryDAO.delete("CN400");

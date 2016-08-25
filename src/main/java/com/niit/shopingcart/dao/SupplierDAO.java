@@ -12,7 +12,7 @@ public interface SupplierDAO {
 
 	public Supplier get(String id);
 
-	public void saveOrUpdate(Supplier supplier);
+	public boolean saveOrUpdate(Supplier supplier);
 
 	public void delete(String id);
 

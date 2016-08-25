@@ -24,7 +24,7 @@ public class ProductTest {
 		product.setDescription("this is product Mobile001 description");
 		product.setPrice(250);
 		product.setSupplierID("SUP001");
-		ProductDAO.saveOrUpdate(product);
+		ProductDAO.save(product);
 		System.out.println("save");
 		context.close();
 		/*if(categoryDAO.save(category)==true);
